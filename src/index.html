@@ -5,24 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
 </head>
 <body class="flex flex-col">
  
-  <div class="flex justify-between px-20  bg-blue-500">
+  <div class="flex justify-between px-5 lg:px-20  bg-blue-500">
     <div class="my-5">
-      <img src="/src/images/logo.png">
+      <img src="./images/logo.png" class="h-8 lg:h-auto">
     </div>
-    <div class="space-x-8 font-serif te mt-10">
+    <div class="space-x-8 font-serif mt-10 hidden lg:inline-block">
       <button class="bg-blue-300 p-3 w-24 rounded-full">Home</button>  
       <button class="">Our Shop</button>
       <button class="">Product Details</button>
       <button class="">Contact Us</button>
       <button class="bg-red-600 rounded-full p-3 w-24">Sign In</button>
-
     </div>
+    <i class="fa-solid fa-bars my-auto text-white lg:hidden"></i>
   </div>
-  <div  style="background-image: url(./images/banner-bg.jpg);" class="flex flex-col  px-24 rounded-b-[200px] pb-40 ">
-    <div class="flex justify-between px-20">
+  <div  style="background-image: url(./images/banner-bg.jpg);" class="text-white flex flex-col lg:px-24 lg:text-left text-center rounded-b-[120px] lg:rounded-b-[200px] pb-40 ">
+    <div class="flex flex-col lg:flex-row justify-between px-5 lg:px-20">
       <div class="te">
         <h1 class="text-2xl te mt-20 text-white">WELCOME TO LUGX</h1>
         <h1 class="text-4xl te font-bold mt-10 text-white">BEST GAMING SITE EVER!</h1>
@@ -40,32 +41,33 @@
       </div>
     </div>
      </div>
-  <div class=" absolute -bottom-64 flex justify-center gap-4 my-10 left-64">
-<div class="flex-1   bg-white rounded-lg justify-center p-10 px-14">
-  <img src="images/featured-01.png" class="bg-blue-500 rounded-full p-8 ">
+
 </div>
-<div class=" flex-1  p-10 px-14 bg-white rounded-lg">
-  <img src="images/featured-02.png" class="bg-blue-500 rounded-full p-8 ">
-</div>
-<div class="flex-1  p-10 px-14 bg-white rounded-lg">
-  <img src="images/featured-03.png" class="bg-blue-500 rounded-full p-8">
-</div>
-<div class="flex-1  p-10 px-14 bg-white rounded-lg">
-  <img src="images/featured-04.png" class="bg-blue-500 rounded-full p-8">
-</div>
+<div class=" lg:absolute static -bottom-64 flex lg:flex-row flex-col justify-center gap-4 my-10 -mt-14 pl-24  items-center">
+  <div class="flex-1  bg-white rounded-lg shadow-lg justify-center py-10 px-24">
+    <img src="images/featured-01.png" class="bg-blue-500 rounded-full p-8 ">
   </div>
-</div>
-  <div class="flex flex-col mt-36 pl-20">
-    <div class="flex justify-between px-20">
+  <div class=" flex-1 shadow-lg py-10 px-24 bg-white rounded-lg">
+    <img src="images/featured-02.png" class="bg-blue-500 rounded-full p-8 ">
+  </div>
+  <div class="flex-1 shadow-lg  py-10 px-24 bg-white rounded-lg">
+    <img src="images/featured-03.png" class="bg-blue-500 rounded-full p-8">
+  </div>
+  <div class="flex-1 shadow-lg  py-10 px-24 bg-white rounded-lg">
+    <img src="images/featured-04.png" class="bg-blue-500 rounded-full p-8">
+  </div>
+    </div>
+  <div class="flex flex-col mt-36 mx-5 lg:pl-20">
+    <div class="flex justify-between lg:px-20">
       <div class="flex flex-col gap-3 ">
       <h1 class="uppercase text-red-600 ">Trending</h1>
       <h1 class="uppercase font-bold text-2xl text-black">trending games</h1>
     </div>
-      <button class="uppercase text-white rounded-full px-8 py-4 bg-red-600">view all</button>
+      <button class="uppercase text-white rounded-full px-8 py-4 bg-red-600 hidden lg:inline-block">view all</button>
     </div>
-    <div class="flex mt-20 gap-8 pl-20">
+    <div class="flex lg:flex-row flex-col mt-20 gap-8 lg:pl-20">
    <div class="bg-gray-300 rounded-md">
-      <img src="images/trending-01 (1).jpg" class="rounded-lg">
+      <img src="images/trending-01 (1).jpg" class="rounded-lg w-full">
       <div>
         <div class="flex flex-col  mt-5">
         <p class="text-center">Adventure</p>
@@ -74,21 +76,21 @@
     </div>
   </div>
 <div  class="bg-gray-300 rounded-md">
-<img src="images/trending-02 (1).jpg" class="rounded-lg">
+<img src="images/trending-02 (1).jpg" class="rounded-lg  w-full">
 <div class="flex flex-col gap-3 mt-5">
   <p class="text-center">Adventure</p>
   <h1 class="text-center font-bold my-5">Assasin Creed</h1>
 </div>
 </div>
 <div  class="bg-gray-300 rounded-md">
-<img src="images/trending-03 (1).jpg" class="rounded-lg">
+<img src="images/trending-03 (1).jpg" class="rounded-lg  w-full">
 <div class="flex flex-col gap-3 mt-5">
   <p class="text-center">Adventure</p>
   <h1 class="text-center font-bold my-5">Assasin Creed</h1>
 </div>
 </div>
 <div  class="bg-gray-300 rounded-md">
-<img src="images/trending-04 (1).jpg" class="rounded-lg">
+<img src="images/trending-04 (1).jpg" class="rounded-lg  w-full">
 <div class="flex flex-col gap-3 mt-5">
   <p class="text-center">Adventure</p>
   <h1 class="text-center font-bold my-5">Assasin Creed</h1>
@@ -96,21 +98,21 @@
 </div>
 </div>
 </div>
-  <div class="flex flex-col  mt-20 rounded-full pl-20">
+  <div class="flex flex-col  mt-20 rounded-full mx-auto lg:pl-20">
 
-    <div class="flex justify-between px-20">
+    <div class="flex justify-between lg:px-20 mx-auto">
     
       <div class="flex flex-col gap-3">
       <h1 class="uppercase text-red-600 font-bold ">Top games</h1>
       <h1 class="uppercase font-bold text-2xl text-black">Most played</h1>
     </div>
     <div>
-      <button class="uppercase text-white rounded-full px-4 py-3 bg-red-600 pr-10">view all</button>
+      <button class="uppercase text-white rounded-full px-4 py-3 bg-red-600 pr-10 hidden lg:inline-block">view all</button>
     </div>
     </div>
-    <div class="flex mt-20 gap-8 pl-20">
+    <div class="flex lg:flex-row flex-col mt-20 gap-8 mx-auto lg:pl-20">
    <div class="bg-gray-300 rounded-md">
-      <img src="images/top-game-01 (1).jpg" class="rounded-lg">
+      <img src="images/top-game-01 (1).jpg" class="rounded-lg w-full">
       <div>
         <div class="flex flex-col gap-3 mt-5">
         <p class="text-center">Action</p>
@@ -162,14 +164,14 @@
     </div>
 </div>
 
-<div class="flex flex-col justify-center px-20 mt-20">
+<div class="flex flex-col justify-center lg:px-20 mt-20">
   <div class="flex flex-col gap-3 items-center">
   <h1 class="uppercase text-red-600 font-bold ">Categories</h1>
   <h1 class="uppercase font-bold text-2xl text-black">Top categories</h1>
 
   
 </div>
-    <div class="flex  mt-20 gap-8 pl-20">
+    <div class="flex lg:flex-row flex-col  mt-20 gap-8 pl-20">
       <div class="bg-blue-700 rounded-md">
       <div>
          <p>Action</p>
@@ -233,9 +235,10 @@
      <button class="bg-red-500 uppercase rounded-full px-4 py-4">shop now</button>
     </div>
     </div> -->
-    <div class="flex justify-center mt-36 relative "><!--main-->
-      <img  class="w-[500px] rounded-3xl " src="images/top-game-01 (1).jpg">
-      <div class="bg-gray-100 rounded-2xl flex flex-col gap-4 absolute  top-24 left-[100px] py-16 "><!--1st form-->
+    <div class="flex lg:flex-row justify-center mt-36 lg:relative "><!--main-->
+      <img  class="lg:w-[500px] rounded-3xl " src="images/top-game-01 (1).jpg">
+      <div class="flex flex-col lg:flex-row">
+      <div class=" bg-gray-100 rounded-2xl flex flex-col gap-4 lg:absolute  top-24 left-[100px] py-16 "><!--1st form-->
       <div class=" flex flex-col mx-20 mt-16 w-[350px]"><!--first text-->
       <h1 class="text-red-400 mt-">Our Shop</h1>
       <p class="font-extrabold text-4xl ">Go Pre-Order Buy & Get Best <span class="text-blue-500">Prices</span> For You!</p>
@@ -248,23 +251,24 @@
           </div>
       </div>
 
-      <div class="bg-gray-100 rounded-2xl flex flex-col gap-4 absolute  top-36 right-[50px] px-2 py-14"><!--2nd form-->
+      <div class="bg-gray-100 rounded-2xl flex flex-col gap-4 lg:absolute  top-36 right-[50px] px-2 py-14"><!--2nd form-->
           <div class=" flex flex-col mx-20 mt-16 w-[350px]"><!--first text-->
           <h1 class="text-red-400 mt-10">NewsLetter</h1>
           <p class="font-extrabold text-4xl ">Get Up To $100 Off Just Buy <span class="text-blue-500">Subscribe</span> Newsletter!
           </p>
           </div>
           <div class=" mx-20 ">
-              <form class=" relative w-[400px]">
+              <form class=" static lg:relative w-[400px]">
                   <input type="text " placeholder="your email" class="rounded-3xl p-4 w-full ">
                   <button class="bg-red-400 rounded-full w-fit  p-4 z-10 absolute right-0 text-white">Subscribe Now</button>
               </form>
           </div>
           </div>
+        </div>
        </div>
 
 
-       <div style="background-image: url(./images/banner-bg.jpg);" class=" w-70 h-32 rounded-t-[200px] mt-64 flex justify-center p-4 text-white font-semibold font-sans">Copyright © 2048 LUGX Gaming Company. All rights reserved.    Design: TemplateMo</div>
+       <div style="background-image: url(./images/banner-bg.jpg);" class=" w-70 h-24px-24 rounded-t-[200px] mt-64 flex justify-center p-4 text-white font-semibold font-sans">Copyright © 2048 LUGX Gaming Company. All rights reserved.    Design: TemplateMo</div>
  </section>
 
   <!-- <div  style="background-image: url(./images/banner-bg.jpg);" class="flex flex-col  px-24 rounded-t-[200px] pb-40 "> -->
